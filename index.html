@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a2e0fa3792.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Calculator - light and dark mode</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="calculator dark-mode">
+          <div class="toggle-icon"><i class="fa-solid fa-toggle-on "></i></div>
+          <div>
+            <input class="display" type="text" id="displayInput" />
+          </div>
+          <div class="digits">
+            <button class="operator" onclick="clearDigits()">AC</button>
+            <button class="operator" onclick="appendToDisplay('/')">/</button>
+            <button class="operator" onclick="appendToDisplay('*')">*</button>
+            <button class="operator" onclick="clearDisplay()">C</button>
+          </div>
+          <div class="digits">
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operator">-</button>
+          </div>
+          <div class="digits">
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('+')" class="operator">+</button>
+          </div>
+          <div class="digits">
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="calculate()" class="operator">=</button>
+          </div>
+          <div class="digits">
+            <button onclick="percentCalculate()" class="operator" id="%">
+              %
+            </button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')" class="operator dot">
+              .
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="src/script.js"></script>
+  </body>
+</html>
