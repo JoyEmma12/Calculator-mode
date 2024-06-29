@@ -36,6 +36,7 @@
   font-size: 20px;
   font-weight: 600;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .display {
   width: 340px;
@@ -64,6 +65,7 @@
 .fa-solid {
   color: #f5a504;
   font-size: 30px;
+  cursor: pointer;
 }
 
 /*styling for dark mode*/
